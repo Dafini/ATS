@@ -1,0 +1,52 @@
+ {% extends "layout.html" %}
+
+ {% block content %}
+
+
+
+
+ <div class="ui input">
+  <input type="text" placeholder="Current Job Openings">
+</div>
+
+  <button class="ui button primary">Select</button>
+
+ <div class="ui input">
+  <input type="text" placeholder="Job Title">
+</div>
+
+   <button class="ui button primary">Select</button>
+
+ <div class="ui input">
+  <input type="text" placeholder="Job ID">
+</div>
+
+ <button class="ui button primary">Select</button>
+
+
+ <table class="ui celled table">
+  <thead>
+    <tr><th>Job Title</th>
+    <th>Job ID</th>
+    <th>Job Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="Job Title">Python Developer</td>
+      <td data-label="Job ID">24</td>
+      <td data-label="Job Description">Python Developer</td>
+    </tr>
+    <tr>
+      <td data-label="Job Title">SQL Developer</td>
+      <td data-label="Job ID">26</td>
+      <td data-label="Job Description">SQL Developer</td>
+    </tr>
+    <tr>
+      <td data-label="Job Title">Django Developer</td>
+      <td data-label="Job ID">24</td>
+      <td data-label="Job Description">Django Developer</td>
+    </tr>
+  </tbody>
+</table>
+
+ {% endblock %}
